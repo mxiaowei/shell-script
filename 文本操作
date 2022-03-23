@@ -1,0 +1,2 @@
+#提取文本“chr16_GL383556v1_alt”开头的行并删除
+awk '/^chr16_GL383556v1_alt/ { next }{printf "%s\n",$0}' up1000down0promoter.bed >up1000down0promoter.bed
